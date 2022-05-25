@@ -10,8 +10,9 @@ public class TowerOfHanoi {
     }
 
     private void HanoiTowers(int n, char x, char y, char z) {
+        System.out.printf("%d, %c, %c, %c%n", n, x,y,z);
         if(n==1) {
-            System.out.printf("%c to peg %c.%n", x,z);
+            System.out.printf("--->%c to peg %c.%n", x,z);
         } else {
             HanoiTowers(n - 1, x, z, y);
             HanoiTowers(1, x, y, z);
